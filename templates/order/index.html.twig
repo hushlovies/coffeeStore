@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<p>test</p>
+	<div class="container">
+		<h1>My Cart</h1>
+		<div class="card card-table">
+
+			<table class="table">
+
+				<thead>
+					<tr>
+						<th>Product:</th>
+						<th>Qte:</th>
+						<th>Price:</th>
+						<th>Total:</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for content in cartContent %}
+						<tr>
+							<td>{{ content.product.name }}</td>
+							<td class="text-end">{{ content.product.price }}
+								€</td>
+							<td>{{ content.quantity }}</td>
+							<td class="text-end">{{ content.quantity * content.product.price }}
+								€</td>
+							<td>
+
+								<a href="../order/add/{{content.product.id}}" class="btn btn-success">
+									Add
+								</a>
+								<a href="../order/remove/{{content.product.id}}" class="btn btn-warning">
+									Remove
+								</a>
+								<a href="../order/delete/{{content.product.id}}" class="btn btn-danger">
+									Delete
+								</a>
+							</td>
+						</tr>
+					{% else %}
+						<tr>
+							<td colspan="5" class="text-center">Your cart is empty</td>
+						</tr>
+					{% endfor %}
+
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3">Total</td>
+						<td class="text-end">{{ sum }}
+							€</td>
+						<td>
+							<a href="../deleteAll" class="btn btn-danger">
+								Delete All
+							</a>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+
+	</div>
+
+{% endblock %}

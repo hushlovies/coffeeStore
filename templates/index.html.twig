@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<div class="header_page">
+
+		{% for item in app.flashes('success') %}
+			<div class="alert alert-success mt-3">
+				{{item}}
+			</div>
+		{% endfor %}
+
+
+		<img class="card-img-top" src="{{ asset('image/header.png') }}" alt="Card image cap">
+
+
+	</div>
+
+
+{% endblock %}

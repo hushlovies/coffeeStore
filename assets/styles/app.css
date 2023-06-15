@@ -1,0 +1,146 @@
+/*Header*/
+header {
+    background-color: black;
+    height: 145px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.header-container a {
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.header-container a:hover {
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #FFE4C7;
+    font-weight: bolder;
+}
+
+.header-container img {
+    width: 130px;
+    margin: 5px 0;
+}
+
+.contents {
+    text-align: end;
+    margin: 50px 0;
+}
+
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+}
+
+
+h1,
+h2,
+footer h4 {
+    color: #ffffff;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.about_description {
+    color: beige;
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.about_container {
+    background-color: #100F11;
+    position: relative;
+    top: -30px;
+}
+
+i {
+    color: #D69452;
+}
+
+.side-image {
+    width: 480px;
+    position: relative;
+
+}
+
+body {
+    margin-top: 200px;
+    background-color: #39261D;
+    overflow-x: hidden;
+}
+
+
+/*Products*/
+.products_container h2 {
+    color: #E9EAEC;
+}
+
+.card-body {
+    min-height: 300px;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C4C35;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    color: #6C4C35;
+}
+
+.product_title {
+    text-align: center;
+    color: #563517;
+}
+
+.product_dtn {
+    text-align: center;
+}
+
+.header_page {
+    position: relative;
+    top: -56px;
+    background-color: #39261D;
+}
+
+.header_page img {
+    width: 60%;
+    margin: 0 22%;
+}
+
+
+
+/*register*/
+
+.register_container {
+    text-align: center;
+    color: #39261D !important;
+}
+
+.card .form_card {
+    padding: 30px 100px !important;
+    text-align: center !important;
+}
+
+.registration_form label {
+    margin: 10px;
+
+}
